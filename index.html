@@ -51,7 +51,48 @@ Much of my research is about inferring the physical world (shape, motion, color,
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
+    <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/AutoTAMP.png' width="200">
+        <script type="text/javascript">
+          function bakedsdf_start() {
+            document.getElementById('AutoTAMP_image').style.opacity = "1";
+          }
 
+          function bakedsdf_stop() {
+            document.getElementById('AutoTAMP_image').style.opacity = "0";
+          }
+          bakedsdf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://bakedsdf.github.io/">
+          <papertitle>BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis</papertitle>
+        </a>
+        <br>
+        <a href="https://lioryariv.github.io/">Lior Yariv*</a>,
+        <a href="https://phogzone.com/">Peter Hedman*</a>,
+        <a href="https://creiser.github.io/">Christian Reiser</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,  <br>
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+        <strong>Jonathan T. Barron</strong>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        <br>
+        <em>SIGGRAPH</em>, 2023
+        <br>
+        <a href="https://bakedsdf.github.io/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=fThKXZ6uDTk">video</a>
+        /
+        <a href="https://arxiv.org/abs/2302.14859">arXiv</a>
+        <p></p>
+        <p>
+        We use SDFs to bake a NeRF-like model into a high quality mesh and do real-time view synthesis.
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
