@@ -99,25 +99,25 @@
       </tr>
 		
    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-	  <div class="one">
-	    <div class="two" id='multi_agent_image'><video  width=100% height=100% muted autoplay loop>
-	    <source src="images/video_manipulation_edited.mp4" type="video/mp4">
-	    Your browser does not support the video tag.
-	    </video></div>
-	    <img src='images/multi_agent.png' width="160">
-	  </div>
-	  <script type="text/javascript">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+	<div class="one">
+	    <div class="two" id='zipnerf_image'>
+		<video width=100% height=100% muted autoplay loop>
+		    <source src="images/video_manipulation_edited.mp4" type="video/mp4">
+		    Your browser does not support the video tag.
+		</video>
+	    </div>
+	    <img id='multi_agent_image' src='images/multi_agent.png' width="160">
+	</div>
+	<script type="text/javascript">
 	    function zipnerf_start() {
-	      document.getElementById('multi_agent_image').style.opacity = "1";
+		document.getElementById('multi_agent_image').style.opacity = "1";
 	    }
-	
 	    function zipnerf_stop() {
-	      document.getElementById('multi_agent_image').style.opacity = "0";
+		document.getElementById('multi_agent_image').style.opacity = "0";
 	    }
-	    zipnerf_stop()
-	  </script>
-      </td>
+	</script>
+    </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://arxiv.org/abs/2306.06531">
           <papertitle>Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?</papertitle>
