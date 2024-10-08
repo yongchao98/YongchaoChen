@@ -52,14 +52,14 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
 		<heading>Talks</heading>
-		<p>2024/11/27 - I will give seminar talk at Intuit AI Research.</p>
-		<p>2024/10/31 - I will present at Tencent AI Lab in Seattle.</p>
-		<p>2024/05/11 - Seminar talk at Osaka Metropolitan University in Japan.</p>
-		<p>2024/04/30 - Seminar talk at MIT LIDS Autonomy Tea Talk.</p>
-		<p>2024/04/18 - Seminar talk at Harvard AM+ Graduate Student Seminar.</p>
-		<p>2024/03/07 - I presented <a href="https://arxiv.org/pdf/2306.06531.pdf">AutoTAMP</a> in <a href="https://superagi.com/agi-leap-summit/?utm_source=superagi&utm_medium=email&utm_campaign=177127&ext_user_id=779ce370&ctrkid=96785e85284">AGI Leap Summit 2024</a>, and won the <strong>best paper award</strong>.</p>
+		<p>2024/11/27 - I will give talk at Intuit AI Research.</p>
+		<p>2024/10/31 - I will give talk at Tencent AI Lab in Seattle.</p>
+		<p>2024/05/11 - Talk at Osaka Metropolitan University in Japan.</p>
+		<p>2024/04/30 - Talk at MIT LIDS Autonomy Tea Talk.</p>
+		<p>2024/04/18 - Talk at Harvard AM+ Graduate Student Seminar.</p>
+		<p>2024/03/07 - Presented <a href="https://arxiv.org/pdf/2306.06531.pdf">AutoTAMP</a> in <a href="https://superagi.com/agi-leap-summit/?utm_source=superagi&utm_medium=email&utm_campaign=177127&ext_user_id=779ce370&ctrkid=96785e85284">AGI Leap Summit 2024</a>, and won the <strong>best paper award</strong>.</p>
 		<p>2024/01/29 - AutoTAMP has been invited to give seminar talk in ICRA <a href="https://vlmnm-workshop.github.io">VLMNM</a> workshop.</p>
-		<p>2023/11/01 - Seminar talk at <a href="https://sitn.hms.harvard.edu">Science In the News (SITN)</a>: Is ChatGPT the Brain Robots Have Been Waiting For? [<a href="https://drive.google.com/file/d/17UuRiUaqRzu3dUjNcWM8v7Q5t1TqtMLo/view?usp=sharing">Poster</a>] [<a href="https://drive.google.com/file/d/1qtXgrw7EmnAMPMha7wX-QSsnrTiy0jEw/view?usp=sharing">Slides</a>]</p>
+		<p>2023/11/01 - Talk at <a href="https://sitn.hms.harvard.edu">Science In the News (SITN)</a>: Is ChatGPT the Brain Robots Have Been Waiting For? [<a href="https://drive.google.com/file/d/17UuRiUaqRzu3dUjNcWM8v7Q5t1TqtMLo/view?usp=sharing">Poster</a>] [<a href="https://drive.google.com/file/d/1qtXgrw7EmnAMPMha7wX-QSsnrTiy0jEw/view?usp=sharing">Slides</a>]</p>
             </td>
           </tr>
         </tbody></table>
@@ -114,6 +114,49 @@
         <p></p>
         <p>
         Our research highlights the limitations of textual reasoning in LLMs for tasks involving math, logic, and optimization, where code generation offers a more scalable solution. Despite advances like OpenAI's GPT Code Interpreter and AutoGen, no optimal method exists to reliably steer LLMs between code and text generation. This study identifies key patterns in how LLMs choose between code and text with various factors and proposes three methods to improve steering.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/Envs_PROMST.png' width="160">
+        <script type="text/javascript">
+          function bakedsdf_start() {
+            document.getElementById('Envs_PROMST').style.opacity = "1";
+          }
+
+          function bakedsdf_stop() {
+            document.getElementById('Envs_PROMST').style.opacity = "0";
+          }
+          bakedsdf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2402.08702">
+          <papertitle>PRompt Optimization in Multi-Step Tasks (PROMST): Integrating Human Feedback and Preference Alignment</papertitle>
+        </a>
+        <br>
+        <strong>Yongchao Chen</strong>,
+        <a href="https://aeroastro.mit.edu/realm/team/jake-arkin/">Jacob Arkin</a>,
+	<a href="https://yih301.github.io">Yilun Hao</a>,
+        <a href="https://mitibmwatsonailab.mit.edu/people/yang-zhang/">Yang Zhang</a>,
+        <a href="https://scholar.google.com/citations?user=aM3i_9oAAAAJ&hl=en">Nicholas Roy</a>,
+        <a href="http://chuchu.mit.edu">Chuchu Fan</a>
+        <br>
+        <em>The 2024 Conference on Empirical Methods on Natural Language Processing (EMNLP'2024 Main)</em>
+        <br>
+	<a href="https://yongchao98.github.io/MIT-REALM-PROMST/">Project Page</a>
+	/
+	<a href="https://github.com/yongchao98/PROMST">Code</a>
+        /
+        <a href="https://arxiv.org/abs/2402.08702">Paper</a>
+	/
+	<a href="https://docs.google.com/presentation/d/1XhxnboJSRgmLAhS9RPUjU8AJSTyPDHKj/edit?usp=sharing&ouid=116887368755709301869&rtpof=true&sd=true">Initial and Optimized Prompts</a>
+        <p></p>
+        <p>
+        We introduce an automatic prompt optimization framework for complex, multi-step agent tasks: PROMST. To handle the issues of task complexity, judging long-horizon correctness of individual actions, high prompt exploration cost, and human preference alignment, we propose the integration of human feedback, a learned score prediction model, and the modification of task score functions.
         </p>
       </td>
     </tr>
@@ -187,49 +230,6 @@
         <p></p>
         <p>
 	Task planning in complex environments with many objects can be slow due to irrelevant objects that distract the planner. This study explores the use of pre-trained large language models (LLMs) to simplify planning problems by identifying and excluding irrelevant objects. Various prompting techniques are tested across multiple LLMs in four task planning domains with hundreds of objects.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <img src='images/Envs_PROMST.png' width="160">
-        <script type="text/javascript">
-          function bakedsdf_start() {
-            document.getElementById('Envs_PROMST').style.opacity = "1";
-          }
-
-          function bakedsdf_stop() {
-            document.getElementById('Envs_PROMST').style.opacity = "0";
-          }
-          bakedsdf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2402.08702">
-          <papertitle>PRompt Optimization in Multi-Step Tasks (PROMST): Integrating Human Feedback and Preference Alignment</papertitle>
-        </a>
-        <br>
-        <strong>Yongchao Chen</strong>,
-        <a href="https://aeroastro.mit.edu/realm/team/jake-arkin/">Jacob Arkin</a>,
-	<a href="https://yih301.github.io">Yilun Hao</a>,
-        <a href="https://mitibmwatsonailab.mit.edu/people/yang-zhang/">Yang Zhang</a>,
-        <a href="https://scholar.google.com/citations?user=aM3i_9oAAAAJ&hl=en">Nicholas Roy</a>,
-        <a href="http://chuchu.mit.edu">Chuchu Fan</a>
-        <br>
-        <em>The 2024 Conference on Empirical Methods on Natural Language Processing (EMNLP'2024 Main)</em>
-        <br>
-	<a href="https://yongchao98.github.io/MIT-REALM-PROMST/">Project Page</a>
-	/
-	<a href="https://github.com/yongchao98/PROMST">Code</a>
-        /
-        <a href="https://arxiv.org/abs/2402.08702">Paper</a>
-	/
-	<a href="https://docs.google.com/presentation/d/1XhxnboJSRgmLAhS9RPUjU8AJSTyPDHKj/edit?usp=sharing&ouid=116887368755709301869&rtpof=true&sd=true">Initial and Optimized Prompts</a>
-        <p></p>
-        <p>
-        We introduce an automatic prompt optimization framework for complex, multi-step agent tasks: PROMST. To handle the issues of task complexity, judging long-horizon correctness of individual actions, high prompt exploration cost, and human preference alignment, we propose the integration of human feedback, a learned score prediction model, and the modification of task score functions.
         </p>
       </td>
     </tr>
@@ -599,6 +599,18 @@
         </p>
       </td>
     </tr>
+
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+		<heading>Hobbies</heading>
+		<p><strong>Sports</strong>: Soccer (I attended Ivy Cup with Harvard twice, though both failed in the group stage…Sad), Basketball, Swimming, Table Tennis, Badminton, Snooker, 5K Marathon.</p>
+		<p><strong>Board Game</strong>: Avalon, Texas Hold'em, Werewolf, Secret Hitler, Citadel, UNO, Settlers of Catan.</p>
+		<p><strong>History</strong>: I like studying all kinds of history.</p>
+		<p><strong>Singing</strong>: I cannot sing professionally but with much interest to country music, such as ‘Take Me Home, Country Road’ by John Denver and ‘The Girl from The South’ by Lei Zhao.</p>
+            </td>
+          </tr>
+        </tbody></table>
 					
       </td>
     </tr>
