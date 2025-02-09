@@ -71,13 +71,57 @@
 		<p>Robotics Learning infuses robots with AI-derived intelligence; conversely, AI for Science exploits AI to generate new scientific intelligence.</p>
 		<h2 style="color:purple; font-size: 20px;">Robotics and Foundation Models</h2>
               <p>
-                I'm currently interested in LLM-based robot planning. Utilizing natural language commands is crucial for mainstream applications of robotics. The recent arising of LLMs makes embodied AI more promising.
+                I'm currently interested in integrating Foundation Models with symbolic computing for general reasoning and planning of real and virtual robots.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/CodeSteer-intro.png' width="160">
+        <script type="text/javascript">
+          function bakedsdf_start() {
+            document.getElementById('CodeSteer').style.opacity = "1";
+          }
+
+          function bakedsdf_stop() {
+            document.getElementById('CodeSteer').style.opacity = "0";
+          }
+          bakedsdf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://drive.google.com/file/d/1306XuVc-_CvXSP2WBRCAH9JBFUos_Kpf/view?usp=share_link">
+          <papertitle>CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance</papertitle>
+        </a>
+        <br>
+        <strong>Yongchao Chen</strong>,
+        <a href="https://yih301.github.io">Yilun Hao</a>,
+	<a href="https://openreview.net/profile?id=~Yueying_Liu3">Yueying Liu</a>,
+	<a href="https://mitibmwatsonailab.mit.edu/people/yang-zhang/">Yang Zhang</a>,
+        <a href="http://chuchu.mit.edu">Chuchu Fan</a>
+        <br>
+        <em>arXiv</em>
+        <br>
+	<a href="https://huggingface.co/yongchao98/CodeSteer-v1/">Huggingface🤗</a>
+	/
+	<a href="https://github.com/yongchao98/CodeSteer-v1.0/">Code</a>
+        /
+	<a href="https://github.com/yongchao98/CodeSteer-v1.0/tree/main/finetune_dataset/">Dataset</a>
+        /
+	<a href="https://github.com/yongchao98/CodeSteer-v1.0/tree/main/dataset_gather/">SymBench</a>
+        /
+        <a href="https://drive.google.com/file/d/1306XuVc-_CvXSP2WBRCAH9JBFUos_Kpf/view?usp=share_link">Paper</a>
+        <p></p>
+        <p>
+        We construct 37 tasks related to symbolic computing and train an 8B CodeSteer model with multi-round SFT and DPO to guide GPT-4o in generating more appropriate code logic, thereby better integrating symbolic computation with textual reasoning. Experiments show that GPT-4o + CodeSteer outperforms o1 and R1 across these 37 tasks overall while also reducing costs of tokens and runtime.
+        </p>
+      </td>
+    </tr>
+		
     <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -459,6 +503,42 @@
         <p></p>
         <p>
         We revealed nanoscale ductile fracture and associated atomistic mechanisms in a body-centered cubic refractory metal.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/PSA_Open_Large_Evol.pdf' width="160">
+        <script type="text/javascript">
+          function bakedsdf_start() {
+            document.getElementById('APbench').style.opacity = "1";
+          }
+
+          function bakedsdf_stop() {
+            document.getElementById('APbench').style.opacity = "0";
+          }
+          bakedsdf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+	<a href="https://assets-eu.researchsquare.com/files/rs-5619028/v1_covered_2b54efed-e328-4815-a246-31866778d7ca.pdf?c=1735028887">
+          <papertitle>APBench: Benchmarking Large Language Model Performance in Fundamental Astrodynamics Problems for Space Engineering</papertitle>
+        </a>
+        <br>
+	<a>Di Wu</a>,
+        <a>Raymond Zhang</a>,
+	<a>Enrico M Zucchelli</a>,
+	<strong>Yongchao Chen</strong>,					 
+	<a>Richard Linares</a>
+        <br>
+        <em><strong><span style="color:#8B0000;">Scientific Reports</span></strong> (Acceptance Rate = 35%, Impact Factor = 3.8)</em>, 2025
+        <br>
+	<a href="https://assets-eu.researchsquare.com/files/rs-5619028/v1_covered_2b54efed-e328-4815-a246-31866778d7ca.pdf?c=1735028887">Paper</a>
+        <p></p>
+        <p>
+        We construct a benchmark APBench on evaluating Large Language Model Performance in Fundamental Astrodynamics Problems for Space Engineering.
         </p>
       </td>
     </tr>
