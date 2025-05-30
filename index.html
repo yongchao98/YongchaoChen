@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Yongchao Chen - 陈勇超</name>
               </p>
-              <p>I am a 4th year PhD student of Electrical Engineering at <a href="https://seas.harvard.edu">Harvard SEAS</a> and <a href="https://lids.mit.edu">MIT LIDS</a>. I am currently working on Robotics and Foundation Models under the guidance of Prof. <a href="https://aeroastro.mit.edu/realm/">Chuchu Fan</a> and Prof. <a href="https://aeroastro.mit.edu/people/nicholas-roy/">Nicholas Roy</a> at MIT and co-advised by Prof. <a href="https://nali.seas.harvard.edu">Na Li</a> at Harvard. I am also doing the research in AI for Physics, Mechanics, and Materials, particularly interested in applying Robotics/Foundation Models into AI4Science.
+              <p>I am a 4th year PhD student of Electrical Engineering at <a href="https://seas.harvard.edu">Harvard SEAS</a> and <a href="https://lids.mit.edu">MIT LIDS</a>. I am currently working on Neuro-Symbolic Foundation Models for Planning under the guidance of Prof. <a href="https://aeroastro.mit.edu/realm/">Chuchu Fan</a> and Prof. <a href="https://aeroastro.mit.edu/people/nicholas-roy/">Nicholas Roy</a> at MIT and co-advised by Prof. <a href="https://nali.seas.harvard.edu">Na Li</a> at Harvard. I am also doing the research in AI for Physics, Mechanics, and Materials, particularly interested in applying Robotics/Foundation Models into AI4Science.
               </p>
               <p>
                 I received my bachelor's degree at <a href="https://en.ustc.edu.cn">University of Science and Technology of China (USTC)</a> with the major in Theoretical and Applied Mechanics and minor in Applied Mathematics in 2021. Before coming to the Robotics domain, I did researches on Applied Physics, Solid Mechanics, and AI for Science under the guidance of Prof. <a href="https://web.mit.edu/nse/people/faculty/li.html">Ju Li</a> at MIT, Prof. <a href="https://seas.harvard.edu/person/joost-vlassak">Joost Vlassak</a> at Harvard, Prof. <a href="https://www.me.gatech.edu/faculty/zhu-1">Ting Zhu</a> at Georgia Tech, and Prof. Hailong Wang at USTC.
@@ -132,7 +132,49 @@
         <a href="https://arxiv.org/pdf/2505.21668">Paper</a>
         <p></p>
         <p>
-        We present a framework that integrates Code Interpreter into LLM reasoning and planning via supervised and reinforcement learning. Our fine-tuned model, R1-CI-14B, surpasses GPT-4o without a Code Interpreter and approaches its performance with one.
+        We present a framework that integrates a Code Interpreter into LLM reasoning and planning using supervised and reinforcement learning. Our fine-tuned model, R1-CI-14B, outperforms GPT-4o without a Code Interpreter and nears its performance with one. While adapting GRPO improves capabilities, its impact is limited by task diversity, highlighting the importance of a strong base model and supervised fine-tuning. To our knowledge, this is the first open-source, general-purpose Code Interpreter trained with these methods.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/RoboControl-webpage.png' width="160">
+        <script type="text/javascript">
+          function bakedsdf_start() {
+            document.getElementById('RoboControl-webpage').style.opacity = "1";
+          }
+
+          function bakedsdf_stop() {
+            document.getElementById('RoboControl-webpage').style.opacity = "0";
+          }
+          bakedsdf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2505.20573">
+          <papertitle>Collision- and Reachability-Aware Multi-Robot Control with Grounded LLM Planners</papertitle>
+        </a>
+        <br>
+	<a href="https://question406.github.io">Jiabao Ji</a>,
+        <strong>Yongchao Chen</strong>,
+	<a href="https://mitibmwatsonailab.mit.edu/people/yang-zhang/">Yang Zhang</a>,
+	<a href="https://www.linkedin.com/in/rkompella/">Ramana Rao Kompella</a>,
+        <a href="http://chuchu.mit.edu">Chuchu Fan</a>,
+	<a href="https://www.linkedin.com/in/gaowen-liu-1b52a610a">Gaowen Liu</a>,
+	<a href="https://code-terminator.github.io">Shiyu Chang</a>
+        <br>
+        <em>arXiv</em>
+        <br>
+	<a href="https://huggingface.co/collections/Shiyu-Lab/constraint-grounded-multi-robot-llm-planner-6834dde02542148d1901d963/">Huggingface🤗</a>
+	/
+	<a href="https://github.com/UCSB-NLP-Chang/constraint-grounded-planner/">Code</a>
+        /
+        <a href="https://arxiv.org/pdf/2505.20573">Paper</a>
+        <p></p>
+        <p>
+        While LLMs have shown promise in robot control tasks, they often produce physically invalid actions due to a lack of constraint awareness. To address this, we propose a reinforcement learning with verifiable rewards (RLVR) framework that trains LLMs to generate only constraint-compliant action plans, rewarding successful task completion.
         </p>
       </td>
     </tr>
@@ -163,7 +205,7 @@
 	<a href="https://mitibmwatsonailab.mit.edu/people/yang-zhang/">Yang Zhang</a>,
         <a href="http://chuchu.mit.edu">Chuchu Fan</a>
         <br>
-        <em>Forty-Second International Conference on Machine Learning (ICML'2025), <strong><span style="color:#8B0000;">CodeSteerLLM and SymBench have been downloaded over 2,000 and 17,000 times, respectively, on Hugging Face since 02/09/2025</span></strong></em>
+        <em>Forty-Second International Conference on Machine Learning (ICML'2025), <strong><span style="color:#8B0000;">CodeSteerLLM and SymBench have been downloaded over 2,000 and 20,000 times, respectively, on Hugging Face since 02/09/2025</span></strong></em>
         <br>
 	<a href="https://huggingface.co/yongchao98/CodeSteer-v1/">Huggingface🤗</a>
 	/
