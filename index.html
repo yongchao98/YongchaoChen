@@ -10,6 +10,33 @@
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
+<style>
+  /* Scrollable window for long lists */
+  .news-scroller {
+    max-height: 220px;      /* adjust to taste */
+    overflow: auto;         /* shows scrollbar when needed */
+    padding-right: 6px;     /* room for the scrollbar */
+  }
+
+  /* Nice, unobtrusive scrollbar (works in modern browsers) */
+  .news-scroller {
+    scrollbar-width: thin;                /* Firefox */
+    scrollbar-color: #b9b9b9 transparent; /* Firefox */
+  }
+  .news-scroller::-webkit-scrollbar { width: 8px; }
+  .news-scroller::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: rgba(0,0,0,.25);
+  }
+  .news-scroller::-webkit-scrollbar-track { background: transparent; }
+
+  /* Optional: subtle fade at top/bottom to hint there’s more content */
+  .news-scroller--fade {
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+            mask-image: linear-gradient(180deg, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+  }
+</style>
+
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
@@ -49,30 +76,33 @@
           </tr>
         </tbody></table>
 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-		<heading>Talks and News</heading>
-		<p>I will give Talk 'Planning and Problem-Solving with General, Scalable Neuro-Symbolic Models' at MIT ML Tea Talk in Nov. 24 and Harvard CS Colloquium in Dec. 11.</p>
-   	<p>I will give Talk 'TUMIX: Multi-Agent Test-Time Scaling with Tool-Use Mixture' at Arize AI in Nov. 18 and Neurips Expo Talk in Dec. 03.</p>
-   	<p>2025/11/04 - Invited Talk at Microsoft Research.</p>
-   	<p>2025/10/16 - Invited Talk at AG2 community.</p>		
-		<p>2025/04/07 - We are calling for <a href="https://openreview.net/group?id=roboticsfoundation.org/RSS/2025/Workshop/FM4RoboPlan#tab-your-consoles">papers</a> and <a href="https://forms.gle/TwNov6kGAsvmUzAo6">reviewers</a> for RSS 2025 Workshop on <a href="https://sites.google.com/brown.edu/fm4roboplan/home?authuser=0">Robot Planning in the Era of Foundation Models (FM4RoboPlan)</a> held on June 21 in Los Angles.</p>
-		<p>2025/03/06 - Invited Talk at The University of Texas at Austin.</p>
-		<p>2025/01/30 - Talk at 30th Annual Sanjoy K. Mitter LIDS Student Conference.</p>
-		<p>2024/12/12 - Keynote talk at Intuit AI Research.</p>
-		<p>2024/11/18 - Invited talk at AutoGen community.</p>
-		<p>2024/11/12 - <strong>Oral presentation (Top 3%)</strong> of <a href="https://arxiv.org/pdf/2402.08702">PROMST</a> in EMNLP'2024, Miami.</p>
-		<p>2024/10/31 - Seminar talk at Tencent AI Lab in Seattle.</p>
-		<p>2024/05/11 - Invited Talk at Osaka Metropolitan University in Japan.</p>
-		<p>2024/04/30 - Seminar Talk at MIT LIDS Autonomy Tea Talk.</p>
-		<p>2024/04/18 - Seminar Talk at Harvard AM+ Graduate Student Seminar.</p>
-		<p>2024/03/07 - Presented <a href="https://arxiv.org/pdf/2306.06531.pdf">AutoTAMP</a> in <a href="https://superagi.com/agi-leap-summit/?utm_source=superagi&utm_medium=email&utm_campaign=177127&ext_user_id=779ce370&ctrkid=96785e85284">AGI Leap Summit 2024</a>, and won the <strong>best paper award</strong>.</p>
-		<p>2024/01/29 - AutoTAMP has been invited to give seminar talk in ICRA <a href="https://vlmnm-workshop.github.io">VLMNM</a> workshop.</p>
-		<p>2023/11/01 - Seminar Talk at <a href="https://sitn.hms.harvard.edu">Science In the News (SITN)</a>: Is ChatGPT the Brain Robots Have Been Waiting For? [<a href="https://drive.google.com/file/d/17UuRiUaqRzu3dUjNcWM8v7Q5t1TqtMLo/view?usp=sharing">Poster</a>] [<a href="https://drive.google.com/file/d/1qtXgrw7EmnAMPMha7wX-QSsnrTiy0jEw/view?usp=sharing">Slides</a>]</p>
-            </td>
-          </tr>
-        </tbody></table>
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:20px;width:100%;vertical-align:middle">
+      <heading>Talks and News</heading>
+
+      <div class="news-scroller news-scroller--fade" role="region" aria-label="Talks and News">
+        <p>I will give Talk 'Planning and Problem-Solving with General, Scalable Neuro-Symbolic Models' at MIT ML Tea Talk in Nov. 24 and Harvard CS Colloquium in Dec. 11.</p>
+        <p>I will give Talk 'TUMIX: Multi-Agent Test-Time Scaling with Tool-Use Mixture' at Arize AI in Nov. 18 and Neurips Expo Talk in Dec. 03.</p>
+        <p>2025/11/04 - Invited Talk at Microsoft Research.</p>
+        <p>2025/10/16 - Invited Talk at AG2 community.</p>
+        <p>2025/04/07 - We are calling for <a href="https://openreview.net/group?id=roboticsfoundation.org/RSS/2025/Workshop/FM4RoboPlan#tab-your-consoles">papers</a> and <a href="https://forms.gle/TwNov6kGAsvmUzAo6">reviewers</a> for RSS 2025 Workshop on <a href="https://sites.google.com/brown.edu/fm4roboplan/home?authuser=0">Robot Planning in the Era of Foundation Models (FM4RoboPlan)</a> held on June 21 in Los Angles.</p>
+        <p>2025/03/06 - Invited Talk at The University of Texas at Austin.</p>
+        <p>2025/01/30 - Talk at 30th Annual Sanjoy K. Mitter LIDS Student Conference.</p>
+        <p>2024/12/12 - Keynote talk at Intuit AI Research.</p>
+        <p>2024/11/18 - Invited talk at AutoGen community.</p>
+        <p>2024/11/12 - <strong>Oral presentation (Top 3%)</strong> of <a href="https://arxiv.org/pdf/2402.08702">PROMST</a> in EMNLP'2024, Miami.</p>
+        <p>2024/10/31 - Seminar talk at Tencent AI Lab in Seattle.</p>
+        <p>2024/05/11 - Invited Talk at Osaka Metropolitan University in Japan.</p>
+        <p>2024/04/30 - Seminar Talk at MIT LIDS Autonomy Tea Talk.</p>
+        <p>2024/04/18 - Seminar Talk at Harvard AM+ Graduate Student Seminar.</p>
+        <p>2024/03/07 - Presented <a href="https://arxiv.org/pdf/2306.06531.pdf">AutoTAMP</a> in <a href="https://superagi.com/agi-leap-summit/?utm_source=superagi&utm_medium=email&utm_campaign=177127&ext_user_id=779ce370&ctrkid=96785e85284">AGI Leap Summit 2024</a>, and won the <strong>best paper award</strong>.</p>
+        <p>2024/01/29 - AutoTAMP has been invited to give seminar talk in ICRA <a href="https://vlmnm-workshop.github.io">VLMNM</a> workshop.</p>
+        <p>2023/11/01 - Seminar Talk at <a href="https://sitn.hms.harvard.edu">Science In the News (SITN)</a>: Is ChatGPT the Brain Robots Have Been Waiting For? [<a href="https://drive.google.com/file/d/17UuRiUaqRzu3dUjNcWM8v7Q5t1TqtMLo/view?usp=sharing">Poster</a>] [<a href="https://drive.google.com/file/d/1qtXgrw7EmnAMPMha7wX-QSsnrTiy0jEw/view?usp=sharing">Slides</a>]</p>
+      </div>
+    </td>
+  </tr>
+</tbody></table>
 
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
