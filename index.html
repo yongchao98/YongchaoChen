@@ -260,6 +260,48 @@
     <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
+          <img src='images/CVPR_debias.png' width="160">
+        <script type="text/javascript">
+          function bakedsdf_start() {
+            document.getElementById('CVPR_debias').style.opacity = "1";
+          }
+
+          function bakedsdf_stop() {
+            document.getElementById('CVPR_debias').style.opacity = "0";
+          }
+          bakedsdf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2511.18123">
+          <papertitle>Bias Is a Subspace, Not a Coordinate: A Geometric Rethinking of Post-hoc Debiasing in Vision-Language Models</papertitle>
+        </a>
+        <br>
+        <a>Dachuan Zhao</a>,
+        <a>Weiyue Li</a>,
+        <a>Zhenda Shen</a>,
+        <a>Yushu Qiu</a>,
+        <a>Bowen Xu</a>,
+        <a>Haoyu Chen</a>,
+        <strong>Yongchao Chen (Corresponding Author)</strong>,
+        <br>
+        <em>arXiv</em>
+        <br>
+	<a href="https://github.com/zhendashen896/SPD">Project Page</a>
+	/
+	<a href="https://github.com/zhendashen896/SPD">Code</a>
+        /
+        <a href="https://arxiv.org/pdf/2511.18123">Paper</a>
+        <p></p>
+        <p>
+        This work analyzes demographic bias in Vision-Language Models and shows that existing coordinate-wise debiasing methods fail due to feature entanglement, poor generalization, and incomplete bias removal. We find that bias is distributed across linear subspaces rather than isolated dimensions, and propose Subspace Projection Debiasing (SPD) to remove the full bias subspace while preserving semantic information. Across multiple multimodal tasks, SPD improves fairness metrics by 18.5% on average with minimal impact on performance.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
           <img src='images/RoboControl-webpage.png' width="160">
         <script type="text/javascript">
           function bakedsdf_start() {
